@@ -19,7 +19,7 @@ Requests + BeautifulSoup<br>
 3. myproxy.py   设置代理 , 有时候抓取的过程中会遇到连续的抓取失败 , 这时候就是该设置代理的时候了...<br>
 <br>
 
-<h3待抓取网站的构造 :</h3> 
+<h3>待抓取网站的构造 :</h3> 
 ![..](https://wx2.sinaimg.cn/mw690/006wh4bKly1fmwvimon1pj30je0gujtv.jpg) <br>
 
 <br>
