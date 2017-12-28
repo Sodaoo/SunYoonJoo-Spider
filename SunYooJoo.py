@@ -12,11 +12,25 @@ import myproxy
 #import TravelTheFile
 headers = myproxy.headers
 
+'''
+##################################################################################
+
+因为是单线程, (不给服务器太大压力) , 所以................就很慢
+你可以在下方定制想要爬取的页数 : 比如我爬全站 , 就设置了 page_number = 173
+你要是想爬前2页试试 ,就把 page_number 改成 page_number = 2 试试效果 .
+
+##################################################################################
+
+'''
+page_number = 173
+
+
+
 # 贴吧主站每一页的URL
 def MainStation_EveryPage():
     url = "http://tieba.baidu.com/f?kw=%E5%AD%99%E5%85%81%E7%8F%A0&ie=utf-8&pn="
     urllist = list()
-    l = [x*50 for x in range(0,175)] # 贴吧的结构还有点奇葩啊.......
+    l = [x*50 for x in range(0,page_number)] # 贴吧的结构还有点奇葩啊.......
     for i in l:
         urllist.append(url+str(i))
     return urllist
@@ -46,6 +60,12 @@ def SingleForumPage_Everyforum(urllist):
 # 此时我们已经制作好了所有图片"帖子"的URL , 都在 SunYoonJoo.txt 这个文本里面.
 
 def Run():  # 主要的函数逻辑都会在这里实现 .
+    isExists=os.path.exists('D:/SunYoonJoo.txt')
+    if not isExists :
+        with open('D:/SunYoonJoo.txt','w') as ff: pass
+        urllist = MainStation_EveryPage()
+        SingleForumPage_Everyforum(urllist)
+
     urls = ReadSingleForumFromFile()  # 从制作好的文件中读取每一个帖子的URL , 进行图片抓取操作 .
                                          # urls 中保存的就是每个帖子的URL .
     
