@@ -6,6 +6,9 @@
 4. 所有图片抓取完毕后合计 60 多 G  .
 
 <h2>食用方法</h2>
+安装 Requests 库 和 BeautifulSoup 
+ - pip install requests
+ - install BeautifulSoup
 打开运行 SunYoonJoo.py 文件即食 .<br>
 
 <h2>爬取思路</h2>
