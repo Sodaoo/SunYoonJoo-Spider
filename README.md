@@ -2,7 +2,7 @@
 1. Python3 爬虫 Requests + BeautifulSoup <br>
 2. 爬取的都是高清图片(原图). <br>
     网上的很多爬虫代码基本都是不清晰的压缩图片<br>
-3. 模特孙允珠非常漂亮...<br>
+3. 模特性感,老妹够劲...<br>
 4. 所有图片抓取完毕后合计 60 多 G  .
 
 <h2>食用方法</h2>
@@ -17,7 +17,7 @@ Requests + BeautifulSoup<br>
 经测试 , 高清的原图的链接是这个 :http://imgsrc.baidu.com/forum/pic/item/+.............<br>
 
 <h2> 文件说明</h2>
-1. SunYoonJoo.py  这个是主文件 ,包括目录的生成 ,页面的抓取 ,图片的爆粗你都是在这个文件进行的.<br>
+1. SunYoonJoo.py  这个是主文件 ,包括目录的生成 ,页面的抓取 ,图片的保存你都是在这个文件进行的.<br>
 2. TravelTheFile.py  这个主要是为了去掉抓取过程中误抓下来的广告页面 .<br>
 3. myproxy.py   设置代理 , 有时候抓取的过程中会遇到连续的抓取失败 , 这时候就是该设置代理的时候了...<br>
 <br>
